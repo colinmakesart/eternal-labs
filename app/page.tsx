@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const productHighlights = [
   "AI resume and interview guidance",
   "Designed for first-time job seekers",
@@ -34,9 +36,9 @@ export default function Home() {
           <a className="transition hover:text-[#050505]" href="#contact">
             Contact
           </a>
-          <a className="transition hover:text-[#050505]" href="/privacy">
+          <Link className="transition hover:text-[#050505]" href="/privacy">
             Privacy
-          </a>
+          </Link>
           <a
             className="transition hover:text-[#050505]"
             href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
@@ -212,9 +214,9 @@ export default function Home() {
             <a className="transition hover:text-[#2563EB]" href="https://eternallabs.dev">
               eternallabs.dev
             </a>
-            <a className="transition hover:text-[#2563EB]" href="/privacy">
+            <Link className="transition hover:text-[#2563EB]" href="/privacy">
               Privacy Policy
-            </a>
+            </Link>
             <a
               className="transition hover:text-[#2563EB]"
               href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"

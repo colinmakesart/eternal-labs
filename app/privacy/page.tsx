@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Eternal Labs",
@@ -50,7 +51,7 @@ export default function PrivacyPage() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_52%_0%,rgba(37,99,235,0.16),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.94),rgba(255,255,255,0))]" />
 
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-5 py-5 sm:px-8">
-        <a
+        <Link
           href="/"
           className="flex items-center gap-3 text-sm font-semibold tracking-[0.02em]"
           aria-label="Eternal Labs home"
@@ -59,14 +60,14 @@ export default function PrivacyPage() {
             EL
           </span>
           <span>Eternal Labs</span>
-        </a>
+        </Link>
         <nav
           className="flex items-center gap-5 text-sm font-medium text-[#52525B]"
           aria-label="Legal navigation"
         >
-          <a className="transition hover:text-[#2563EB]" href="/">
+          <Link className="transition hover:text-[#2563EB]" href="/">
             Home
-          </a>
+          </Link>
           <a
             className="transition hover:text-[#2563EB]"
             href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
