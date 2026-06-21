@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Support page for First Shift, a mobile app published by Eternal Labs LLC.",
 };
 
-const supportEmail = "[SUPPORT_EMAIL]";
+const supportEmail = "firstshiftapp@gmail.com";
 
 const faqs = [
   {
@@ -80,7 +80,12 @@ export default function FirstShiftSupportPage() {
           </h2>
           <p className="mt-5 text-base leading-8 text-[#52525B]">
             Contact email:{" "}
-            <span className="font-semibold text-[#050505]">{supportEmail}</span>
+            <a
+              className="font-semibold text-[#2563EB] transition hover:text-[#1D4ED8]"
+              href={`mailto:${supportEmail}`}
+            >
+              {supportEmail}
+            </a>
           </p>
         </section>
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Privacy Policy for First Shift, a mobile app published by Eternal Labs LLC.",
 };
 
-const supportEmail = "[SUPPORT_EMAIL]";
+const supportEmail = "firstshiftapp@gmail.com";
 
 const collectedInfo = [
   "Account info: name, email address (via Supabase authentication, including Sign in with Apple)",
@@ -182,7 +182,12 @@ export default function FirstShiftPrivacyPage() {
         <PolicySection title="Contact Us">
           <p>
             Questions about this policy or your data can be sent to:{" "}
-            <span className="font-semibold text-[#050505]">{supportEmail}</span>
+            <a
+              className="font-semibold text-[#2563EB] transition hover:text-[#1D4ED8]"
+              href={`mailto:${supportEmail}`}
+            >
+              {supportEmail}
+            </a>
           </p>
         </PolicySection>
       </article>
